@@ -1,7 +1,7 @@
 [![Wordpress](images/wp-repo.png)](WordPress)
-##  Wordpress
+# WordPress
 
-This package deploys an High Available WordPress hosting solution that initially contains 1 application server and 1 database container. The package provides vertical scalling per node and horizontal scaling for each layer out-of-the-box.
+This package deploys an High Available WordPress hosting solution that contains 1 application server and 1 database container. The package provides vertical scalling per node and horizontal scaling for each layer out-of-the-box.
 
 ### Highlights
 This package is designed to handle big load spikes by adjusting the allocated resources and topology configuration with a help of vertical and horizontal scaling. As result, it provides very cost effective solution for websites and blogs with variable load.
