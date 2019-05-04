@@ -16,7 +16,7 @@ settings:
   - name: wp_title
     caption: WP Title
     type: string
-    default: HelloWorld
+    default: WordPress
     required: 'true'
     regex: "^[\\w-.]*$"
     regexText: Incorrect WP Title.
