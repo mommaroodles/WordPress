@@ -31,8 +31,8 @@ Take advantage of our 14 Day Free Trial and get this solution instantly deployed
 
 [![GET IT HOSTED](https://raw.githubusercontent.com/mommaroodles/wordpress/master/images/deploy-to-webwolf.png)](https://reg.cloud.webwolf.systems/?manifest=https://github.com/mommaroodles/wordpress/raw/master/manifest.jps)
 
-To deploy this package to WebWolf PaaS, import [this manifest](https://mommaroodles.github.io/wordpress/master/manifest.jps) within your dashboard.
+To deploy this package to WebWolf PaaS, import [this manifest](https://github.com/mommaroodles/wordpress/blob/master/manifest.jps) within your dashboard.
 
-
+### For More Information out Pricing visit
 
 
