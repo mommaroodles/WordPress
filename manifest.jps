@@ -65,7 +65,7 @@ actions:
 
     - cmd[cp]: |-
         wp core config --dbhost=${nodes.sqldb.address} --dbname=wordpress --dbuser=${globals.DB_USER} --dbpass=${globals.DB_PASS} --path=${SERVER_WEBROOT}/ROOT
-        wp --allow-root core install --title="${globals.WP_TITLE}" --admin_user=${user.email} --admin_password=${globals.ADMIN_PASSWD} --url=${this.idnaHost} --admin_email=${user.email} --path=${SERVER_WEBROOT}/ROOT
+        wp --allow-root core install --title=${globals.WP_TITLE} --admin_user=${user.email} --admin_password=${globals.ADMIN_PASSWD} --url=${this.idnaHost} --admin_email=${user.email} --path=${SERVER_WEBROOT}/ROOT
         wget ${baseUrl}/configs/wp-webwolf.php -O ${SERVER_WEBROOT}/ROOT/wp-webwolf.php
         sed -i "s/.*'wp-settings.php';.*/require_once ABSPATH . 'wp-webwolf.php';\n&/" ${SERVER_WEBROOT}/ROOT/wp-config.php
 
