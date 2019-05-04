@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+[![Wordpress](../images/wp.png)](../wordpress)
+##  Wordpress
 
-You can use the [editor on GitHub](https://github.com/mommaroodles/wordpress/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This package deploys WordPress that initially contains 1 application server and 1 database container. The package provides vertical scalling per node and horizontal scaling for each layer out-of-the-box.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Highlights
+This package is designed to handle big load spikes by adjusting the allocated resources and topology configuration with a help of vertical and horizontal scaling. As result, it provides very cost effective solution for websites and blogs with variable load.
 
-### Markdown
+### Environment Topology
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+![wordpress-environment-topology](../images/word-press-environment-topology.png)
 
-```markdown
-Syntax highlighted code block
+### Specifics
 
-# Header 1
-## Header 2
-### Header 3
+Layer                |     Server    | Number of CTs <br/> by default | Cloudlets per CT <br/> (reserved/dynamic) | Options
+-------------------- | --------------| :----------------------------: | :---------------------------------------: | :-----:
+AS                   | NGINX PHP FPM |       1                        |           1 / 16                          | -
+DB                   |    MySQL      |       1                        |           1 / 16                          | -
 
-- Bulleted
-- List
+* AS - Application server
+* DB - Database
+* CT - Container
 
-1. Numbered
-2. List
+**WordPress Version**: 5.1.1<br/>
+**PHP Engine**: PHP 7.3.0<br/>
+**MySQL Database**: 8.0.13
 
-**Bold** and _Italic_ and `Code` text
+### Deployment
 
-[Link](url) and ![Image](src)
-```
+In order to get this solution instantly deployed, click the "Deploy to WebWolf Hosting" button, specify your email address within the widget, and press Install.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+[![GET IT HOSTED](https://raw.githubusercontent.com/mommaroodles/wordpress/master/images/deploy-to-webwolf.png)](https://reg.cloud.webwolf.systems/?manifest=https://github.com/mommaroodles/wordpress/raw/master/manifest.jps)
 
-### Jekyll Themes
+To deploy this package to WebWolf PaaS, import [this JPS manifest](../../../raw/master/wordpress/manifest.jps) within your dashboard ([detailed instruction](https://docs.jelastic.com/environment-export-import#import)).
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mommaroodles/wordpress/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
