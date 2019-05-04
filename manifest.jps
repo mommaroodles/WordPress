@@ -32,14 +32,15 @@ nodes:
   - nodeType: nginxphp-dockerized
     tag: 1.14.2-php-7.3.3
     count: 1
-    cloudlets: 16
-    ip: 1
+    cloudlets: 8
+    extip: 1
     env:
       SERVER_WEBROOT: /var/www/webroot
 
   - nodeType: mysql
     tag: 8.0.16
     count: 1
+    fixedCloudlets: 4
     cloudlets: 8
   
 onInstall:
