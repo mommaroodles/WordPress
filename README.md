@@ -1,7 +1,7 @@
 [![Wordpress](images/wp-repo-logo.png)](WordPress)
 
 # WordPress
-This package deploys an High Available WordPress hosting solution that contains 1 application server and 1 database container. The package provides vertical scalling per node and horizontal scaling for each layer out-of-the-box.
+This package deploys an High Available WordPress hosting solution that contains 1 application server and 1 database container. The package provides vertical scaling per node and adds Free SSL Certificate to your environment.
 
 ## Highlights
 This package is designed to handle big load spikes by adjusting the allocated resources and topology configuration with a help of vertical and horizontal scaling. As result, it provides very cost effective solution for websites and blogs with variable load.
@@ -12,10 +12,10 @@ This package is designed to handle big load spikes by adjusting the allocated re
 
 ## Specifics
 
-Layer                    |         Server        | Number of CTs <br/> by default | Cloudlets per CT <br/> (reserved/dynamic) | Options
+Layer                    |         Server        | Number of CTs <br> by default | Cloudlets per CT <br> (reserved/dynamic) | Options
 ------------------------ | :-------------------: | :----------------------------: | :---------------------------------------: | :-----:
-AS                       |    NGINX PHP FPM      |               1                |                 1 / 16                    | -
-DB                       |        MySQL          |               1                |                 1 / 16                    | -
+AS                       |    NGINX PHP FPM      |               1                |                 1 / 8                    | -
+DB                       |        MySQL          |               1                |                 4 / 8                    | -
 
 * AS - Application server
 * DB - Database
@@ -27,7 +27,7 @@ DB                       |        MySQL          |               1              
 
 ### Deployment
 
-Take advantage of our 14 Day Free Trial and get this solution instantly deployed, click the "Deploy to WebWolf Hosting" button, specify your email address within the widget, name your environment, choose a location and press Install.
+Take advantage of our 14 Day Free Trial and get this solution deployed instantly, click the "Deploy to WebWolf Hosting" button, specify your email address within the widget, name your environment, choose a location and press Install.
 
 [![GET IT HOSTED](https://raw.githubusercontent.com/mommaroodles/wordpress/master/images/deploy-to-webwolf.png)](https://reg.cloud.webwolf.systems/?manifest=https://github.com/mommaroodles/wordpress/raw/master/manifest.jps)
 
