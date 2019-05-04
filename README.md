@@ -33,6 +33,6 @@ Take advantage of our 14 Day Free Trial and get this solution instantly deployed
 
 To deploy this package to WebWolf PaaS, import [this manifest](https://github.com/mommaroodles/wordpress/blob/master/manifest.jps) within your dashboard.
 
-### For More Information out Pricing visit
+**For More Information** visit [WebWolf Hosting](https://webwolfhosting.com/pricing-and-payment/)
 
 
