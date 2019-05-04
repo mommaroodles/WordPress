@@ -11,6 +11,16 @@ homepage: https://wordpress.org/
 description: WordPress is web software you can use to create a beautiful website or blog. We like to say that WordPress is both free and priceless at the same time.
 baseUrl: https://raw.githubusercontent.com/mommaroodles/wordpress/master
 
+settings:
+  fields:
+  - name: wp_title
+    caption: WP Title
+    type: string
+    default: HelloWorld
+    required: 'true'
+    regex: "^[\\w-.]*$"
+    regexText: Incorrect WP Title.
+
 globals:
   DB_USER: webwolf-${fn.random}
   DB_PASS: ${fn.password(20)}
