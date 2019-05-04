@@ -1,7 +1,7 @@
 [![Wordpress](images/wp-repo-logo.png)](WordPress)
 
-# WordPress
-This package deploys an High Available WordPress hosting solution that contains 1 application server and 1 database container. The package provides vertical scaling per node and adds Free SSL Certificate to your environment.
+# WordPress 1 Click Deployment
+This package deploys an High Available WordPress hosting solution that contains 1 application server and 1 database container. The package provides vertical scaling per node, and adds Free SSL Certificate to your environment.
 
 ## Highlights
 This package is designed to handle big load spikes by adjusting the allocated resources and topology configuration with a help of vertical and horizontal scaling. As result, it provides very cost effective solution for websites and blogs with variable load.
@@ -14,8 +14,8 @@ This package is designed to handle big load spikes by adjusting the allocated re
 
 Layer                    |         Server        | Number of CTs <br> by default | Cloudlets per CT <br> (reserved/dynamic) | Options
 ------------------------ | :-------------------: | :----------------------------: | :---------------------------------------: | :-----:
-AS                       |    NGINX PHP FPM      |               1                |                 1 / 8                    | -
-DB                       |        MySQL          |               1                |                 4 / 8                    | -
+AS                       |    NGINX PHP FPM      |               1                |                 1 / 8                     | -
+DB                       |        MySQL          |               1                |                 4 / 8                     | -
 
 * AS - Application server
 * DB - Database
@@ -32,6 +32,7 @@ Take advantage of our 14 Day Free Trial and get this solution deployed instantly
 [![GET IT HOSTED](https://raw.githubusercontent.com/mommaroodles/wordpress/master/images/deploy-to-webwolf.png)](https://reg.cloud.webwolf.systems/?manifest=https://github.com/mommaroodles/wordpress/raw/master/manifest.jps)
 
 To deploy this package to WebWolf PaaS, import [this manifest](https://github.com/mommaroodles/wordpress/blob/master/manifest.jps) within your dashboard.
+After installation, to add an Custom Domain, add an external IP to your application server and create an A record with your domain name pointing to your external IP, OR, add a CNAME record pointing to our environment URL.
 
 **For More Information** visit [WebWolf Hosting](https://webwolfhosting.com/pricing-and-payment/)
 

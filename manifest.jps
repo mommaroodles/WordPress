@@ -33,7 +33,6 @@ nodes:
     tag: 1.14.2-php-7.3.3
     count: 1
     cloudlets: 8
-    extip: 1
     env:
       SERVER_WEBROOT: /var/www/webroot
 
