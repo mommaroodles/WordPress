@@ -15,13 +15,15 @@ globals:
   DB_USER: webwolf-${fn.random}
   DB_PASS: ${fn.password(20)}
   ADMIN_PASSWD: ${fn.password(20)}
+  WP_TITLE: "${settings.wp_title}"
 
-ssl: false
+ssl: true
 nodes:
   - nodeType: nginxphp-dockerized
     tag: 1.14.2-php-7.3.3
     count: 1
     cloudlets: 16
+    ip: 1
     env:
       SERVER_WEBROOT: /var/www/webroot
 
@@ -53,15 +55,8 @@ actions:
 
     - cmd[cp]: |-
         wp core config --dbhost=${nodes.sqldb.address} --dbname=wordpress --dbuser=${globals.DB_USER} --dbpass=${globals.DB_PASS} --path=${SERVER_WEBROOT}/ROOT
-        wp --allow-root core install --title='' --admin_user=admin --admin_password=${globals.ADMIN_PASSWD} --url=${this.idnaHost} --admin_email=${user.email} --path=${SERVER_WEBROOT}/ROOT
+        wp --allow-root core install --title="${globals.WP_TITLE}" --admin_user=${user.email} --admin_password=${globals.ADMIN_PASSWD} --url=${this.idnaHost} --admin_email=${user.email} --path=${SERVER_WEBROOT}/ROOT
         wget ${baseUrl}/configs/wp-webwolf.php -O ${SERVER_WEBROOT}/ROOT/wp-webwolf.php
         sed -i "s/.*'wp-settings.php';.*/require_once ABSPATH . 'wp-webwolf.php';\n&/" ${SERVER_WEBROOT}/ROOT/wp-config.php
 
-success: 'Below you will find your admin panel link, username and password.</br></br>
-    <table style=''font-size:13px; border: none;''><tr><td>Admin panel URL:</td><td
-    style=''padding-left: 10px;''><a href=''${env.protocol}://${env.domain}/wp-admin/''
-    target=''_blank''>${env.protocol}://${env.domain}/wp-admin/</a></td></tr>  <tr><td>Admin
-    name:</td><td style=''padding-left: 10px;''>admin</td></tr><tr><td>Password:</td><td
-    style=''padding-left: 10px;''>${globals.ADMIN_PASSWD}</td></tr></table></br>To add
-    custom domain name for your WordPress installation, add an A record pointing to the Application Server IP.
-    or a CNAME pointing to ${env.domain}.'
+success: /text/success.md
