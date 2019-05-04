@@ -21,7 +21,7 @@ DB                       |        MySQL          |               1              
 * DB - Database
 * CT - Container
 
-**WordPress Version**: 5.1.1<br/>
+**WordPress Version**: WordPress Latest<br/>
 **PHP Engine**: PHP 7.3.3<br/>
 **MySQL Database**: 8.0.16
 
