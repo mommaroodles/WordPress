@@ -1,7 +1,7 @@
-[![Wordpress](../images/wp.png)](../wordpress)
+[![Wordpress](images/wp-repo.png)](WordPress)
 ##  Wordpress
 
-This package deploys WordPress that initially contains 1 application server and 1 database container. The package provides vertical scalling per node and horizontal scaling for each layer out-of-the-box.
+This package deploys an High Available WordPress hosting solution that initially contains 1 application server and 1 database container. The package provides vertical scalling per node and horizontal scaling for each layer out-of-the-box.
 
 ### Highlights
 This package is designed to handle big load spikes by adjusting the allocated resources and topology configuration with a help of vertical and horizontal scaling. As result, it provides very cost effective solution for websites and blogs with variable load.
@@ -31,6 +31,8 @@ Take advantage of our 14 Day Free trial and get this solution instantly deployed
 
 [![GET IT HOSTED](https://raw.githubusercontent.com/mommaroodles/wordpress/master/images/deploy-to-webwolf.png)](https://reg.cloud.webwolf.systems/?manifest=https://github.com/mommaroodles/wordpress/raw/master/manifest.jps)
 
-To deploy this package to WebWolf PaaS, import [this JPS manifest](../../../raw/master/wordpress/manifest.jps) within your dashboard ([detailed instruction](https://docs.jelastic.com/environment-export-import#import)).
+To deploy this package to WebWolf PaaS, import [this JPS manifest](https://mommaroodles.github.io/wordpress/blob/master/manifest.jps) within your dashboard.
+
+
 
 
