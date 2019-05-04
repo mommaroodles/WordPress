@@ -31,7 +31,7 @@ Take advantage of our 14 Day Free Trial and get this solution deployed instantly
 
 [![GET IT HOSTED](https://raw.githubusercontent.com/mommaroodles/wordpress/master/images/deploy-to-webwolf.png)](https://reg.cloud.webwolf.systems/?manifest=https://github.com/mommaroodles/wordpress/raw/master/manifest.jps)
 
-To deploy this package to WebWolf PaaS, import [this manifest](https://github.com/mommaroodles/wordpress/blob/master/manifest.jps) within your dashboard.
+To deploy this package to WebWolf PaaS, import [this manifest](https://raw.githubusercontent.com/mommaroodles/wordpress/master/manifest.jps) within your dashboard.
 After installation, to add an Custom Domain, add an external IP to your application server and create an A record with your domain name pointing to your external IP, OR, add a CNAME record pointing to our environment URL.
 
 **For More Information** visit [WebWolf Hosting](https://webwolfhosting.com/pricing-and-payment/)
