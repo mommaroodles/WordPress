@@ -1,4 +1,4 @@
-[![Wordpress](images/wp-repo.png)](WordPress)
+[![Wordpress](images/wp-repo-logo.png)](WordPress)
 
 # WordPress
 This package deploys an High Available WordPress hosting solution that contains 1 application server and 1 database container. The package provides vertical scalling per node and horizontal scaling for each layer out-of-the-box.
