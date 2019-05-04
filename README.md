@@ -27,7 +27,7 @@ DB                       |        MySQL          |               1              
 
 ### Deployment
 
-Take advantage of our 14 Day Free Trial and get this solution instantly deployed, click the "Deploy to WebWolf Hosting" button, specify your email address within the widget, and press Install.
+Take advantage of our 14 Day Free Trial and get this solution instantly deployed, click the "Deploy to WebWolf Hosting" button, specify your email address within the widget, name your environment, choose a location and press Install.
 
 [![GET IT HOSTED](https://raw.githubusercontent.com/mommaroodles/wordpress/master/images/deploy-to-webwolf.png)](https://reg.cloud.webwolf.systems/?manifest=https://github.com/mommaroodles/wordpress/raw/master/manifest.jps)
 
