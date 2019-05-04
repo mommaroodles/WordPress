@@ -1,4 +1,4 @@
-[![Wordpress](images/wp-repo.png)](WordPress)
+[![Wordpress](images/wp-repo-logo.png)](WordPress)
 
 # WordPress
 This package deploys an High Available WordPress hosting solution that contains 1 application server and 1 database container. The package provides vertical scalling per node and horizontal scaling for each layer out-of-the-box.
@@ -33,6 +33,6 @@ Take advantage of our 14 Day Free Trial and get this solution instantly deployed
 
 To deploy this package to WebWolf PaaS, import [this manifest](https://github.com/mommaroodles/wordpress/blob/master/manifest.jps) within your dashboard.
 
-### For More Information out Pricing visit
+**For More Information** visit [WebWolf Hosting](https://webwolfhosting.com/pricing-and-payment/)
 
 
