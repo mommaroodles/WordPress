@@ -1,14 +1,14 @@
 jpsType: install
 jpsVersion: '1.1'
 id: wordpress
-name: Wordpress
+name: WordPress
 categories:
   - apps/blogs
   - apps/content-management
 logo: https://raw.githubusercontent.com/mommaroodles/wordpress/master/images/wp.png
-homepage: https://wordpress.org/
+homepage: https://webwolfhosting/
 
-description: WordPress is web software you can use to create a beautiful website or blog. We like to say that WordPress is both free and priceless at the same time.
+description: Thank you for choosing WebWolf. To get started, choose a unique name e.g. your domain name (domain) without the .COM, for your Environment and select a Region. For the Display Name you can choose anything you like, but we recommend that you enter your full domain name without the http(s).
 baseUrl: https://raw.githubusercontent.com/mommaroodles/wordpress/master
 
 settings:
